@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BTT portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #169e9d;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: ##52e4c6;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #39b9e0;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #39b9e0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>BTT Portfolio</h2>
+
+
+<header>
+  <h2>My name is Devin </h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+	      <a href="Page1 14.htm">My work</a>
+		  <a href="Page2 3.htm">My resume</a>  
+		  <a href="Page3 3.htm">letter</a>
+    </ul>
+  </nav>
+  	  <img src="data:image/png;base64,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" alt="dog" width="500" height="333">
+  
+  <article>
+    <h1>About me</h1>
+    <p>Hello My name Devin Ferlisi I am Currently 14 years old and I live in Canada. I go to St. Edmund Campion school. In the BTT course I have learned many things such as proper letter formating and website building. I am especially good at things like designing slide shows websites and other work like that. I am also good at collecting information for my work. This website showcases some of my best work during the semester </p>
+  </article>
+
+</section>
+
+
+<footer>
+  <p></p>
+</footer>
+
+</body>
+</html>
